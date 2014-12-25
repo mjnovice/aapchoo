@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <GridView 
+        android:id="@+id/gridview"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" >
+
+    </GridView>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="horizontal" >
+		<ImageView 
+		    android:id="@+id/player1token"
+			android:contentDescription="Player1"
+    		android:layout_width="50dp"
+    		android:layout_height="50dp"
+		 >
+		</ImageView>
+        <TextView
+            android:id="@+id/scorelabelp1"
+           	android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	       	android:layout_weight="1"
+	       	android:gravity="center"
+	       	android:textSize="30sp"
+	       	android:typeface="sans"		>
+		</TextView>
+	    <AnalogClock
+	        android:id="@+id/AnalogClock1"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        >
+	
+	        <requestFocus />
+	    </AnalogClock>
+        <TextView
+            android:id="@+id/scorelabelp2"
+           	android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	       	android:layout_weight="1"
+	       	android:gravity="center"
+	       	android:textSize="30sp"
+	       	android:typeface="sans"
+			>
+		</TextView>
+		<ImageView 
+		    android:contentDescription="Player2"
+		    android:id="@+id/player2token"
+    		android:layout_width="50dp"
+    		android:layout_height="50dp"
+		 >
+		</ImageView>
+	</LinearLayout>
+	<TextView
+            android:id="@+id/result"
+           	android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	       	android:layout_weight="1"
+	       	android:gravity="center"
+	       	android:textSize="22sp"
+	       	android:typeface="sans"
+			>
+	</TextView>
+ </LinearLayout>
